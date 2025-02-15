@@ -1,0 +1,34 @@
+[
+    {
+        "brand":"iPlanet",
+        "amount":89000
+    },
+    {
+        "brand":"Clear Trip",
+        "amount":34602
+    },
+    {
+        "brand":"Indian Oil",
+        "amount":22029
+    },
+    {
+        "brand":"Spencers",
+        "amount":21903
+    },
+    {
+        "brand":"Adidas",
+        "amount":17499
+    },
+    {
+        "brand":"Gilly's",
+        "amount":16499
+    },
+    {
+        "brand":"H&M",
+        "amount":15987
+    },
+    {
+        "brand":"Others",
+        "amount":146054
+    }
+]
