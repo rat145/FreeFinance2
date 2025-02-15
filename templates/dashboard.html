@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title -->
+    <title>Dashboard | FreeFinance</title>
+    <!-- Tailwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+  </head>
+  <body class="h-full flex flex-col relative">
+    <!-- Overlay (for dull background when lightbox is opened) -->
+    <div id="overlay" class="overlay"></div>
+    <!-- Header Menu / Navigation bar -->
+    <header
+      class="bg-[#0A3981] text-white flex justify-between items-center py-[5px] px-[20px]"
+    >
+      <!-- Header Left -->
+      <div>
+        <a href="#">
+          <h1 class="font-bold text-[20px]">FreeFinance</h1>
+        </a>
+      </div>
+      <!-- Header Right -->
+      <div>
+        <ul class="list-none flex gap-[30px] text-[14px]">
+          <a href="#"
+            ><li class="hover:font-semibold transition-all">Home</li></a
+          >
+          <a href="#"
+            ><li class="hover:font-semibold transition-all">Login</li></a
+          >
+          <a href="#"
+            ><li class="hover:font-semibold transition-all">Register</li></a
+          >
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="flex flex-1">
+      <!-- START left tabs sidebar -->
+      <div
+        class="bg-[#0A3981] text-white text-[12px] w-[75px] flex flex-col gap-[50px] pt-[50px]"
+      >
+        <!-- Tab 1: Dashboard -->
+        <div
+          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='dashboard' else '' }}"
+          onclick="window.location.href='/dashboard';"
+        >
+          <img
+            src="{{url_for('static', filename='images/dashboard.svg')}}"
+            width="25px"
+          />
+          <p>Dashboard</p>
+        </div>
+        <!-- Tab 2: Brands -->
+        <div
+          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='brands' else '' }}"
+          onclick="window.location.href='/dashboard/brands';"
+        >
+          <img
+            src="{{url_for('static', filename='images/brands.svg')}}"
+            width="25px"
+          />
+          <p>Brands</p>
+        </div>
+        <!-- Tab 3: Lifestyle -->
+        <div
+          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='lifestyle' else '' }}"
+          onclick="window.location.href='/dashboard/lifestyle';"
+        >
+          <img
+            src="{{url_for('static', filename='images/lifestyle.svg')}}"
+            width="25px"
+          />
+          <p>Lifestyle</p>
+        </div>
+        <!-- Tab 4: Profile -->
+        <div
+          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='profile' else '' }}"
+          onclick="window.location.href='/dashboard/profile';"
+        >
+          <img
+            src="{{url_for('static', filename='images/profile.svg')}}"
+            width="25px"
+          />
+          <p>Profile</p>
+        </div>
+      </div>
+      <!-- END left tabs sidebar -->
+
+      <!-- START right content area -->
+      <div class="w-[70%] p-[50px]">
+        <!-- DASHBOARD -->
+        {% if activeTab == "dashboard" %}
+        <div
+          class="cards-wrapper flex flex-wrap justify-start items-start gap-[50px]"
+        >
+          <!-- Card1 -->
+          <div
+            class="card w-[400px] h-[80px] flex cursor-pointer"
+            onclick="window.location.href='/accounts-and-cards'"
+          >
+            <div
+              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
+            >
+              <img
+                src="{{url_for('static', filename='images/creditcard.svg')}}"
+                width="50px"
+                class="card-icon"
+              />
+            </div>
+            <div
+              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+            >
+              <p class="text-white text-[22px] font-semibold">
+                Accounts & Cards
+              </p>
+            </div>
+          </div>
+          <!-- Card2 -->
+          <div
+            class="card w-[400px] h-[80px] flex cursor-pointer"
+            onclick="window.location.href='/reminders'"
+          >
+            <div
+              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
+            >
+              <img
+                src="{{url_for('static', filename='images/notification.svg')}}"
+                width="50px"
+                class="card-icon"
+              />
+            </div>
+            <div
+              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+            >
+              <p class="text-white text-[22px] font-semibold">Reminders</p>
+            </div>
+          </div>
+          <!-- Card3 -->
+          <div
+            class="card w-[400px] h-[80px] flex cursor-pointer"
+            onclick="window.location.href='/redirecting'"
+          >
+            <div
+              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
+            >
+              <img
+                src="{{url_for('static', filename='images/trend.svg')}}"
+                width="50px"
+                class="card-icon"
+              />
+            </div>
+            <div
+              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+            >
+              <p class="text-white text-[22px] font-semibold">
+                Transactions & Trends
+              </p>
+            </div>
+          </div>
+          <!-- Card4 -->
+          <div
+            class="card w-[400px] h-[80px] flex cursor-pointer"
+            onclick="window.location.href='/investments'"
+          >
+            <div
+              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
+            >
+              <img
+                src="{{url_for('static', filename='images/investment.svg')}}"
+                width="50px"
+                class="card-icon"
+              />
+            </div>
+            <div
+              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+            >
+              <p class="text-white text-[22px] font-semibold">Investments</p>
+            </div>
+          </div>
+          <!-- Card5 -->
+          <div
+            class="card w-[400px] h-[80px] flex cursor-pointer"
+            onclick="window.location.href='/insurance-and-mortgage'"
+          >
+            <div
+              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
+            >
+              <img
+                src="{{url_for('static', filename='images/insurance.svg')}}"
+                width="50px"
+                class="card-icon"
+              />
+            </div>
+            <div
+              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+            >
+              <p class="text-white text-[22px] font-semibold">
+                Insurance & Mortgage
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- BRANDS -->
+        {% if activeTab == "brands" %}
+        <div class="brands-wrapper flex flex-col gap-10 relative">
+          <div
+            class="relative bg-[#D4EBF8] px-10 pt-[70px] pb-10 rounded h-[300px]"
+          >
+            <p
+              class="text-[14px] absolute font-semibold bg-[#0A3981] text-white p-2 rounded-tl top-0 left-0"
+            >
+              Loyalty Rewards
+            </p>
+            <!-- Layout rewards slider -->
+            <button
+              class="loyalty-slider-larr absolute left-[8px] top-[150px] cursor-pointer hover:drop-shadow-sm"
+              onclick="goPrev()"
+            >
+              <img
+                src="{{ url_for('static', filename='images/larr.svg') }}"
+                width="25"
+                height="25"
+              />
+            </button>
+            <div class="loyalty-brand-cards-wrapper">
+              {% for item in loyalty_brands_data %}
+              <div
+                class="loyalty-brand-card w-[150px] flex flex-col cursor-pointer hover:shadow-lg"
+                onclick="openLightbox1(this)"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/brands/' ~ item.brand ~ '.png') }}"
+                  width="200"
+                  height="200"
+                  class="rounded-t"
+                />
+                <button
+                  class="loyalty-brand-card-button py-[10px] rounded-b text-[16px] text-white bg-[#1F509A] transition-colors cursor-pointer"
+                >
+                  {{ item.brand }}
+                </button>
+              </div>
+              {% endfor %}
+            </div>
+            <button
+              class="loyalty-slider-rarr absolute right-[8px] top-[150px] cursor-pointer hover:drop-shadow-sm"
+              onclick="goNext()"
+            >
+              <img
+                src="{{ url_for('static', filename='images/rarr.svg') }}"
+                width="25"
+                height="25"
+              />
+            </button>
+          </div>
+          <!-- -->
+          <div
+            class="relative bg-[#D4EBF8] px-10 pt-[70px] pb-10 rounded h-[300px]"
+          >
+            <p
+              class="text-[14px] absolute font-semibold bg-[#0A3981] text-white p-2 rounded-tl top-0 left-0"
+            >
+              Brands you may like
+            </p>
+            <!-- Recommended brands slider -->
+            <button
+              class="recommended-brands-larr absolute left-[8px] top-[150px] cursor-pointer hover:drop-shadow-sm"
+              onclick="goPrev1()"
+            >
+              <img
+                src="{{ url_for('static', filename='images/larr.svg') }}"
+                width="25"
+                height="25"
+              />
+            </button>
+            <div class="recommended-brands-cards-wrapper">
+              {% for value in recommended_brands_data["Brand"].values() %}
+              <div
+                class="recommended-brands-card w-[150px] flex flex-col cursor-pointer hover:shadow-lg"
+                onclick="openLightbox2(this)"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/brands/' ~ value ~ '.png') }}"
+                  width="200"
+                  height="200"
+                  class="rounded-t"
+                />
+                <button
+                  class="recommended-brands-card-button py-[10px] rounded-b text-[16px] text-white bg-[#1F509A] transition-colors cursor-pointer"
+                >
+                  {{ value }}
+                </button>
+              </div>
+              {% endfor %}
+            </div>
+            <button
+              class="recommended-brands-rarr absolute right-[8px] top-[150px] cursor-pointer hover:drop-shadow-sm"
+              onclick="goNext1()"
+            >
+              <img
+                src="{{ url_for('static', filename='images/rarr.svg') }}"
+                width="25"
+                height="25"
+              />
+            </button>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <!-- END right content area -->
+
+      <!-- START rightmost content (Metric cards) -->
+      <div class="w-[30%] flex flex-col gap-5 p-[50px]">
+        <!-- Metric card 1 -->
+        <div
+          class="metric-card bg-[#D4EBF8] rounded-md px-[20px] py-[30px] flex flex-col gap-[20px]"
+        >
+          <p class="text-[#E38E49] text-[22px] font-semibold">Income</p>
+          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 153123</p>
+          <p class="text-[#ff0000] text-[16px] font-semibold">
+            &darr; 1&percnt;
+          </p>
+        </div>
+        <!-- Metric card 2 -->
+        <div
+          class="metric-card bg-[#D4EBF8] rounded-md px-[20px] py-[30px] flex flex-col gap-[20px]"
+        >
+          <p class="text-[#E38E49] text-[22px] font-semibold">Expense</p>
+          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 127550</p>
+          <p class="text-[#008000] text-[16px] font-semibold">
+            &darr; 40&percnt;
+          </p>
+        </div>
+        <!-- Metric card 3 -->
+        <div
+          class="metric-card bg-[#D4EBF8] rounded-md px-[20px] py-[30px] flex flex-col gap-[20px]"
+        >
+          <p class="text-[#E38E49] text-[22px] font-semibold">
+            Avg Daily Spends
+          </p>
+          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 4114</p>
+          <p class="text-[#008000] text-[16px] font-semibold">
+            &darr; 40&percnt;
+          </p>
+        </div>
+      </div>
+      <!-- END rightmost content (Metric cards) -->
+    </main>
+
+    <!-- Lightbox (Brands popup) -->
+    <div
+      class="lightbox w-[500px] h-[300px] bg-slate-100 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-8 items-center justify-center rounded-3xl shadow-2xl invisible py-5 px-10"
+    >
+      <p class="text-[18px] text-[#0A3981] font-bold text-center">
+        Hi, this is a discount message!
+      </p>
+      <button
+        class="text-[16px] px-[20px] py-[7px] bg-[#1F509A] hover:bg-[#0A3981] transition-colors text-white rounded cursor-pointer"
+        onclick="closeLightbox()"
+      >
+        Close
+      </button>
+    </div>
+
+    <!-- Custom script -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

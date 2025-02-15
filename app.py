@@ -58,5 +58,9 @@ def home():
     # Render the form
     return render_template("login.html")
 
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html", activeTab="dashboard")
+
 if __name__ == '__main__':
     app.run(debug=True)
