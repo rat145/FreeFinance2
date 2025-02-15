@@ -2,9 +2,9 @@ import pandas as pd
 import json
 
 # File Paths
-fd_file_path = r"C:\FreeFinance2\FreeFinance2\Database\fdDetails.json"
-rd_file_path = r"C:\FreeFinance2\FreeFinance2\Database\rdDetails.json"
-shreya_file_path = r"C:\FreeFinance2\FreeFinance2\Database\customer_alldata.json"
+fd_file_path = r"Database\fdDetails.json"
+rd_file_path = r"Database\rdDetails.json"
+shreya_file_path = r"Database\customer_alldata.json"
 
 # Load FD details
 with open(fd_file_path, "r") as f:

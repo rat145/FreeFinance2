@@ -21,7 +21,7 @@ def json2csv(json_name, csv_name, key):
         csv_writer.writerow(tran.values())
     data_file.close() 
 
-json2csv(r'C:\FreeFinance2\FreeFinance2\Database\customer_alldata.json', 'bank_details.csv','accounts')
+json2csv(r'C:\FreeFinance2\FreeFinance2\Database\customer_alldata.json', r'C:\FreeFinance2\FreeFinance2\Database\bank_details.csv','accounts')
 
 df = pd.read_csv(r'C:\FreeFinance2\FreeFinance2\Database\bank_details.csv')
 
