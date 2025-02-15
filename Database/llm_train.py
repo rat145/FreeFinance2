@@ -4,10 +4,30 @@ import joblib
 from langchain_groq import ChatGroq
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
+import os
+import sys
+import yaml
 
-# ==========================
+# current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# # Add the directory containing setu_fetch_data.py to the Python path
+# sys.path.append(os.path.join(current_dir))
+# # ==========================
 # LOAD TRANSACTION DATA FILE
 # ==========================
+CONFIG_PATH = r"./config.yaml"
+
+# Check if config.yaml exists
+if not os.path.exists(CONFIG_PATH):
+    raise FileNotFoundError(f"Config file not found at {CONFIG_PATH}")
+
+# Load credentials from config.yaml
+with open(CONFIG_PATH, "r") as config_file:
+    config = yaml.safe_load(config_file)
+
+GROQ_API_KEY = config.get("GROQ_API_KEY")
+
+
 file_path = r"C:\FreeFinance2\FreeFinance2\Database\customer_data.json"
 
 with open(file_path, "r") as f:
@@ -271,7 +291,7 @@ def analyze_transactions(query):
 # ==========================
 # AI MODEL SETUP
 # ==========================
-GROQ_API_KEY = "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"
+GROQ_API_KEY = config.get("GROQ_API_KEY")
 llama3 = ChatGroq(api_key=GROQ_API_KEY, model="llama3-8b-8192")
 
 template = PromptTemplate.from_template(
