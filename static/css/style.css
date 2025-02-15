@@ -1,0 +1,98 @@
+/* Colorhunt color theme reference link: https://colorhunt.co/palette/d4ebf81f509a0a3981e38e49 */
+
+.card-right {
+  transition: all 0.1s ease-in-out;
+}
+.card-icon {
+  transition: filter 0.3s;
+}
+.card-left {
+  transition: background-color 0.2s linear;
+}
+
+.card:hover {
+  .card-right {
+    background-color: #264eca;
+  }
+  .card-icon {
+    filter: invert(100%);
+  }
+  .card-left {
+    background-color: #264eca;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #d4ebf8;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #264eca;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0a3981;
+}
+
+/* Fix the white box issue */
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: #d4ebf8; /* Match the track color */
+}
+
+.loyalty-brand-card:hover {
+  .loyalty-brand-card-button {
+    background-color: #2148c0;
+  }
+}
+
+.recommended-brands-card:hover {
+  .recommended-brands-card-button {
+    background-color: #2148c0;
+  }
+}
+
+/* Loyalty rewards slider */
+.loyalty-brand-cards-wrapper {
+  position: relative;
+  height: 210px;
+  overflow-x: hidden;
+}
+
+.loyalty-brand-card {
+  position: absolute;
+  transition: 1s;
+}
+
+/* Recommended Brands slider */
+.recommended-brands-cards-wrapper {
+  position: relative;
+  height: 210px;
+  overflow-x: hidden;
+}
+
+.recommended-brands-card {
+  position: absolute;
+  transition: 1s;
+}
+
+/* Overlay to darken background when lightbox is opened */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+.lightbox {
+  z-index: 1001;
+}

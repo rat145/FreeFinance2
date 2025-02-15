@@ -19,7 +19,7 @@
     <div id="overlay" class="overlay"></div>
     <!-- Header Menu / Navigation bar -->
     <header
-      class="bg-[#0A3981] text-white flex justify-between items-center py-[5px] px-[20px]"
+      class="bg-[#2148C0] text-white flex justify-between items-center py-[5px] px-[20px]"
     >
       <!-- Header Left -->
       <div>
@@ -47,7 +47,7 @@
     <main class="flex flex-1">
       <!-- START left tabs sidebar -->
       <div
-        class="bg-[#0A3981] text-white text-[12px] w-[75px] flex flex-col gap-[50px] pt-[50px]"
+        class="bg-[#2148C0] text-white text-[12px] w-[75px] flex flex-col gap-[50px] pt-[50px]"
       >
         <!-- Tab 1: Dashboard -->
         <div
@@ -71,16 +71,16 @@
           />
           <p>Brands</p>
         </div>
-        <!-- Tab 3: Lifestyle -->
+        <!-- Tab 3: FinPilot -->
         <div
-          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='lifestyle' else '' }}"
-          onclick="window.location.href='/dashboard/lifestyle';"
+          class="flex flex-col items-center gap-1 py-[25px] cursor-pointer {{ 'bg-[#E38E49]' if activeTab=='finpilot' else '' }}"
+          onclick="window.location.href='/dashboard/finpilot';"
         >
           <img
             src="{{url_for('static', filename='images/lifestyle.svg')}}"
             width="25px"
           />
-          <p>Lifestyle</p>
+          <p>FinPilot</p>
         </div>
         <!-- Tab 4: Profile -->
         <div
@@ -88,10 +88,10 @@
           onclick="window.location.href='/dashboard/profile';"
         >
           <img
-            src="{{url_for('static', filename='images/profile.svg')}}"
+            src="{{url_for('static', filename='images/credit-score.svg')}}"
             width="25px"
           />
-          <p>Profile</p>
+          <p>Credit Score</p>
         </div>
       </div>
       <!-- END left tabs sidebar -->
@@ -118,7 +118,7 @@
               />
             </div>
             <div
-              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+              class="card-right bg-[#2148c0] bg-[url('/static/images/login-bg.svg')] bg-contain bg-no-repeat bg-right w-[80%] px-[20px] flex items-center rounded-e-md"
             >
               <p class="text-white text-[22px] font-semibold">
                 Accounts & Cards
@@ -140,7 +140,7 @@
               />
             </div>
             <div
-              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+              class="card-right bg-[#2148c0] bg-[url('/static/images/login-bg.svg')] bg-contain bg-no-repeat bg-right w-[80%] px-[20px] flex items-center rounded-e-md"
             >
               <p class="text-white text-[22px] font-semibold">Reminders</p>
             </div>
@@ -160,7 +160,7 @@
               />
             </div>
             <div
-              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+              class="card-right bg-[#2148c0] bg-[url('/static/images/login-bg.svg')] bg-contain bg-no-repeat bg-right w-[80%] px-[20px] flex items-center rounded-e-md"
             >
               <p class="text-white text-[22px] font-semibold">
                 Transactions & Trends
@@ -182,31 +182,9 @@
               />
             </div>
             <div
-              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
+              class="card-right bg-[#2148c0] bg-[url('/static/images/login-bg.svg')] bg-contain bg-no-repeat bg-right w-[80%] px-[20px] flex items-center rounded-e-md"
             >
               <p class="text-white text-[22px] font-semibold">Investments</p>
-            </div>
-          </div>
-          <!-- Card5 -->
-          <div
-            class="card w-[400px] h-[80px] flex cursor-pointer"
-            onclick="window.location.href='/insurance-and-mortgage'"
-          >
-            <div
-              class="card-left bg-[#D4EBF8] w-[20%] flex justify-center items-center p-[7px] rounded-s-md"
-            >
-              <img
-                src="{{url_for('static', filename='images/insurance.svg')}}"
-                width="50px"
-                class="card-icon"
-              />
-            </div>
-            <div
-              class="card-right bg-[#1F509A] w-[80%] px-[20px] flex items-center rounded-e-md"
-            >
-              <p class="text-white text-[22px] font-semibold">
-                Insurance & Mortgage
-              </p>
             </div>
           </div>
         </div>
@@ -219,7 +197,7 @@
             class="relative bg-[#D4EBF8] px-10 pt-[70px] pb-10 rounded h-[300px]"
           >
             <p
-              class="text-[14px] absolute font-semibold bg-[#0A3981] text-white p-2 rounded-tl top-0 left-0"
+              class="text-[14px] absolute font-semibold bg-[#2148C0] text-white p-2 rounded-tl top-0 left-0"
             >
               Loyalty Rewards
             </p>
@@ -247,7 +225,7 @@
                   class="rounded-t"
                 />
                 <button
-                  class="loyalty-brand-card-button py-[10px] rounded-b text-[16px] text-white bg-[#1F509A] transition-colors cursor-pointer"
+                  class="loyalty-brand-card-button py-[10px] rounded-b text-[16px] text-white bg-[#264eca] transition-colors cursor-pointer"
                 >
                   {{ item.brand }}
                 </button>
@@ -270,7 +248,7 @@
             class="relative bg-[#D4EBF8] px-10 pt-[70px] pb-10 rounded h-[300px]"
           >
             <p
-              class="text-[14px] absolute font-semibold bg-[#0A3981] text-white p-2 rounded-tl top-0 left-0"
+              class="text-[14px] absolute font-semibold bg-[#264eca] text-white p-2 rounded-tl top-0 left-0"
             >
               Brands you may like
             </p>
@@ -298,7 +276,7 @@
                   class="rounded-t"
                 />
                 <button
-                  class="recommended-brands-card-button py-[10px] rounded-b text-[16px] text-white bg-[#1F509A] transition-colors cursor-pointer"
+                  class="recommended-brands-card-button py-[10px] rounded-b text-[16px] text-white bg-[#264eca] transition-colors cursor-pointer"
                 >
                   {{ value }}
                 </button>
@@ -328,7 +306,7 @@
           class="metric-card bg-[#D4EBF8] rounded-md px-[20px] py-[30px] flex flex-col gap-[20px]"
         >
           <p class="text-[#E38E49] text-[22px] font-semibold">Income</p>
-          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 153123</p>
+          <p class="text-[#2148C0] text-[22px] font-bold">&#8377; 153123</p>
           <p class="text-[#ff0000] text-[16px] font-semibold">
             &darr; 1&percnt;
           </p>
@@ -338,7 +316,7 @@
           class="metric-card bg-[#D4EBF8] rounded-md px-[20px] py-[30px] flex flex-col gap-[20px]"
         >
           <p class="text-[#E38E49] text-[22px] font-semibold">Expense</p>
-          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 127550</p>
+          <p class="text-[#2148C0] text-[22px] font-bold">&#8377; 127550</p>
           <p class="text-[#008000] text-[16px] font-semibold">
             &darr; 40&percnt;
           </p>
@@ -350,7 +328,7 @@
           <p class="text-[#E38E49] text-[22px] font-semibold">
             Avg Daily Spends
           </p>
-          <p class="text-[#0A3981] text-[22px] font-bold">&#8377; 4114</p>
+          <p class="text-[#2148C0] text-[22px] font-bold">&#8377; 4114</p>
           <p class="text-[#008000] text-[16px] font-semibold">
             &darr; 40&percnt;
           </p>
@@ -363,11 +341,11 @@
     <div
       class="lightbox w-[500px] h-[300px] bg-slate-100 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-8 items-center justify-center rounded-3xl shadow-2xl invisible py-5 px-10"
     >
-      <p class="text-[18px] text-[#0A3981] font-bold text-center">
+      <p class="text-[18px] text-[#2148C0] font-bold text-center">
         Hi, this is a discount message!
       </p>
       <button
-        class="text-[16px] px-[20px] py-[7px] bg-[#1F509A] hover:bg-[#0A3981] transition-colors text-white rounded cursor-pointer"
+        class="text-[16px] px-[20px] py-[7px] bg-[#264eca] hover:bg-[#2148C0] transition-colors text-white rounded cursor-pointer"
         onclick="closeLightbox()"
       >
         Close

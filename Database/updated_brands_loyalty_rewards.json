@@ -1,0 +1,34 @@
+[
+    {
+        "brand": "iPlanet",
+        "loyalty_rewards": "Get free wireless earphones with the purchase of an iPhone! Plus, enjoy an exclusive discount on accessories."
+    },
+    {
+        "brand": "Clear Trip",
+        "loyalty_rewards": "Book your next flight with Clear Trip and get a free lounge pass along with an exclusive discount on hotel stays!"
+    },
+    {
+        "brand": "Spencers",
+        "loyalty_rewards": "Shop at Spencers and receive a free grocery tote bag on your next shopping trip! Plus, enjoy discounts on organic products."
+    },
+    {
+        "brand": "Adidas",
+        "loyalty_rewards": "Buy Adidas sportswear and get a free pair of performance socks! Also, enjoy a special discount on your next footwear purchase."
+    },
+    {
+        "brand": "Gilly's",
+        "loyalty_rewards": "Shop at Gilly's and enjoy a free surprise gift with your purchase! Plus, get an exclusive discount on select items."
+    },
+    {
+        "brand": "H&M",
+        "loyalty_rewards": "Shop at H&M and enjoy a free surprise gift with your purchase! Plus, get an exclusive discount on select items."
+    },
+    {
+        "brand": "Amazon (AMZN)",
+        "loyalty_rewards": "Shop at Amazon (AMZN) and enjoy a free surprise gift with your purchase! Plus, get an exclusive discount on select items."
+    },
+    {
+        "brand": "Veromoda",
+        "loyalty_rewards": "Shop at Veromoda  and enjoy a free surprise gift with your purchase! Plus, get an exclusive discount on select items."
+    }
+]
