@@ -1,0 +1,297 @@
+Id,Brand_name,Category,Sub_category
+0,Airtel (Bharti Air),Bills,Phone Bill
+1,Jio,Bills,Phone Bill
+2,Amul,Foods and Drinks,Snacks
+3,Spencers,Groceries,Supermart
+4,Reliance Fresh,Groceries,Supermart
+5,Kwality Bazaar ,Groceries,Small Grocery Shop
+6,Shopper Stop,Shopping,Clothing Center
+7,Reliance Digital,Shopping,Electronic Center
+8,Louis Philippe,Shopping,M Clothing Brand
+9,Arrow,Shopping,M Clothing Brand
+10,Van Heusen,Shopping,M Clothing Brand
+11,Allen Solly,Shopping,M Clothing Brand
+12,Casio,Shopping,Watch Brand
+13,Peter England,Shopping,M Clothing Brand
+14,Dunkin Donuts,Foods and Drinks,Fast Food
+15,KFC,Foods and Drinks,Fast Food
+16,Mc Donalds,Foods and Drinks,Fast Food
+17,Taco Bell,Foods and Drinks,Fast Food
+18,Nykaa,Shopping,Cosmetics
+19,Zara,Shopping,U Clothing Brand
+20,Starbucks,Foods and Drinks,Coffee Shop
+21,Burger King,Foods and Drinks,Fast Food
+22,Game The Shop,Shopping,Game Shop
+23,CEX,Shopping,Electronic Center
+24,Jockey,Shopping,U Clothing Brand
+25,Hamleys,Shopping,Toy Center
+26,American Tourister,Shopping,Bag Brand
+27,Manyavar,Shopping,M Clothing Brand
+28,Raymond,Shopping,M Clothing Brand
+29,Bose,Shopping,Electronic Brand
+30,Land Mark,Shopping,Shopping Center
+32,H&M,Shopping,U Clothing Brand
+33,Sony,Shopping,Electronic Brand
+34,Samsonite,Shopping,Bag Brand
+35,Skechers,Shopping,Sports Brand
+36,Nike,Shopping,Sports Brand
+37,Pepe Jeans,Shopping,M Clothing Brand
+38,Jack and Jones,Shopping,M Clothing Brand
+39,Lens Kart,Shopping,Eyewear Brand
+40,Lenovo,Shopping,Electronic Brand
+41,Croma,Shopping,Electronic Center
+42,Lacoste,Shopping,M Clothing Brand
+43,iPlanet,Shopping,Electronic Brand
+44,Gap,Shopping,U Clothing Brand
+45,Fastrack,Shopping,Watch Brand
+46,Samsung,Shopping,Electronic Brand
+47,Miniso,Shopping,Accessory Brand
+48,Mi Store,Shopping,Electronic Store
+49,Chumbak,Shopping,Accessory Brand
+50,Ramaiah Hospital,Health,Hospital
+51,PVR,Entertainment,Cinema
+52,Inox,Entertainment,Cinema
+53,Cinepolis,Entertainment,Cinema
+54,Apollo Pharmacy,Health,Pharmacy
+55,Bata,Shopping,U Footwear Brand
+56,Being Human,Shopping,M Clothing Brand
+57,Fitbit,Shopping,Electronic Brand
+58,Amazon (AMZN),Shopping,Shopping Center Online
+59,PatymMall,Shopping,Shopping Center Online
+60,Flipkart,Shopping,Shopping Center Online
+61,Myntra,Shopping,Shopping Center Online
+62,Zoomcar,Travel,Vehicle Rental
+63,HP World,Shopping,Electronic Store
+64,Vogo,Travel,Vehicle Rental
+65,Bounce,Travel,Vehicle Rental
+66,Gilly's,Foods and Drinks,Bar
+67,Plated,Foods and Drinks,Restaurant
+68,Plan B,Foods and Drinks,Bar
+69,Smally's,Foods and Drinks,Fast Food
+70,Smoke House,Foods and Drinks,Restaurant
+71,Chin lung,Foods and Drinks,Bar
+71,Sherlock's Pub,Foods and Drinks,Bar
+73,Sarjapur Social,Foods and Drinks,Bar
+74,No Limmits,Foods and Drinks,Bar
+75,Nandi Hangout,Foods and Drinks,Restaurant
+76,Zomato,Foods and Drinks,Food Order
+77,Swiggy,Foods and Drinks,Food Order
+78,Dominos,Foods and Drinks,Fast Food
+79,Tawa Tandoor,Foods and Drinks,Restaurant
+80,Burp,Foods and Drinks,Fast Food
+81,Vinny's,Foods and Drinks,Fast Food
+82,Chapter One,Foods and Drinks,Bar
+83,Cuppa ,Foods and Drinks,Fast Food
+84,Polar Bear,Foods and Drinks,Fast Food
+85,Beijing Bites,Foods and Drinks,Restaurant
+86,Mr Goofy's,Foods and Drinks,Restaurant
+87,Stoned Monkey,Foods and Drinks,Fast Food
+88,Leon Grill,Foods and Drinks,Fast Food
+89,Adidas,Shopping,Sports Brand
+90,Reebok,Shopping,Sports Brand
+91,Fortis Hospital,Health,Hospital
+92,Narayana Hospital,Health,Hospital
+93,Sky Bags,Shopping,Bag Brand
+94,Bangalore Central,Shopping,Clothing Center
+95,Tanishq,Shopping,Jewellery
+96,Poorvika Mobile,Shopping,Electronic Brand
+97,Aabushan,Shopping,Jewellery
+98,Ray Ban,Shopping,Accessory Brand
+99,Bluo,Entertainment,Game Center
+100,Smaash,Entertainment,Game Center
+101,Titan Eye Plus,Shopping,Eyewear Brand
+102,Tissot,Shopping,Watch Brand
+103,USPA,Shopping,M Clothing Brand
+104,Vans,Shopping,U Footwear Brand
+105,VIP,Shopping,Bag Brand
+106,Make My Trip,Travel,Holiday Planner
+107,Go Ibibo,Travel,Holiday Planner
+108,Clear Trip,Travel,Holiday Planner
+109,5 Computers,Shopping,Electronic Store
+110,Canon,Shopping,Electronic Store
+111,Spar Hypermarket,Groceries,Supermart
+112,Reliance Jewels,Shopping,Jewellery
+113,SK Rolls,Foods and Drinks,Snacks
+114,Crossword ,Shopping,Shopping Center
+115,O2 Spa,Personal Care,Spa Brand
+116,Super Dry,Shopping,M Clothing Brand
+117,Only,Shopping,F Clothing Brand
+118,Biba,Shopping,F Clothing Brand
+119,Paypal,Transfer,Payment App
+120,Bharat Petroleum,Fuel,Fuel
+121,Indian Oil,Fuel,Fuel
+122,Hindustan Petroleum,Fuel,Fuel
+123,Shell,Fuel,Fuel
+124,IRCTC,Travel,Holiday Planner
+125,Uber,Travel,Cab Brand
+126,Ola ,Travel,Cab Brand
+127,Meru Cabs,Travel,Cab Brand
+128,Skull Candy,Shopping,Electronic Store
+129,Kaya Skin Clinic,Personal Care,Salon
+130,Hairspeak,Personal Care,Salon
+131,Invogue Salon,Personal Care,Salon
+132,BBlunt,Personal Care,Salon
+133,Javed Habib,Personal Care,Salon
+134,BESCOM,Bills,Electricity
+135,Dish TV India (Dish Infra),Bills,TV
+136,Ion Broadband,Bills,Wifi
+137,Tatasky,Bills,TV
+138,MESCOM,Bills,Electricity
+139,Netflix,Entertainment,Streaming Brand
+140,Hotstar,Entertainment,Streaming Brand
+141,Zee5,Entertainment,Streaming Brand
+142,AltBalaji,Entertainment,Streaming Brand
+143,1mg,Health,E-Pharmacy
+144,Dunzo,Courier,Courier
+145,Eat Fit,Foods and Drinks,Snacks
+146,Fresh Menu,Foods and Drinks,Snacks
+147,Gold's Gym,Personal Care,Gym
+148,CultFit,Personal Care,Gym
+149,Booking,Travel,Holiday Planner
+150,Rapido,Travel,Vehicle Rental
+151,Revv,Travel,Vehicle Rental
+152,Myles Car,Travel,Vehicle Rental
+153,Nearbuy,Foods and Drinks,Food Order
+154,HeathXP,Health,Pharmacy
+155,Big Basket,Groceries,Supermart Online
+156,Grofers,Groceries,Supermart Online
+157,Chai Point,Foods and Drinks,Snacks
+158,Drops Liquor,Foods and Drinks,Liquor
+159,Dell,Shopping,Electronic Brand
+160,Acer,Shopping,Electronic Brand
+161,PrestigeGroup,Other,Other
+162,Citizen Watches,Shopping,Watch Brand
+163,Decathlon,Shopping,Sports Brand
+164,Ikea,Shopping,Sports Brand
+165,Royal Oak Furniture,Shopping,Furniture
+166,William Penn,Shopping,Accessory Brand
+167,Bluedart,Courier,Courier
+168,FedEx,Courier,Courier
+169,HomeTown,Shopping,Furniture
+170,Bombay Dyeing,Shopping,Furniture
+171,Pantaloons,Shopping,Clothing Center
+172,Taj Hotels,Travel,Hotel
+173,BBBP Bengal,Other,Other
+174,Bigtree,Other,Other
+175,Ease My Trip (EasyTrip),Travel,Holiday Planner
+176,Swathi Hospital,Health,Hospital
+177,Airplaza Retail ,Other,Other
+178,Sri Manjuna,Other,Other
+179,Premier Service Bangalore,Other,Other
+180,UTH Fashion,Shopping,U Clothing Brand
+181,Mariya Mart,Groceries,Small Grocery Shop
+182,Rolls on Wheel,Foods and Drinks,Snacks
+183,Levitate Brewery Bangalore,Foods and Drinks,Bar
+184,Cash Withdrawal (cashwdl),Cash Withdrawal,Cash Withdrawal
+185,Sai Sarvana,Foods and Drinks,Snacks
+186,Big Bazaar,Groceries,Supermart
+187,Book My Show,Entertainment,Cinema Booking Online
+188,UIDAI,Other,Other
+189,Dentist Clinic,Health,Hospital
+190,Skin Clinic,Health,Hospital
+191,Ear Nose Throat (ENT) Clinic,Health,Hospital
+192,Eye Clinic,Health,Hospital
+193,Gynaecologist Clinic,Health,Hospital
+194,Physiotheraphy Clinic,Health,Hospital
+195,Psychiatrist Clinic,Health,Hospital
+196,Sexologist,Health,Hospital
+197,Simple Pay,Bills,Payment App
+198,Easebuzz,Other,Other
+199,Lazy Pay,Bills,Payment App
+200,TP Kotak Life Insurance,Insurance,Insurance
+201,IndiaFirst Life Insurance,Insurance,Insurance
+202,Max Life Insurance,Insurance,Insurance
+203,TP ExideLife Insurance,Insurance,Insurance
+204,Aditya Birla Sun Life Insurance,Insurance,Insurance
+205,AEGON Life Insurance,Insurance,Insurance
+206,Bajaj Allianz Life Insurance,Insurance,Insurance
+207,Bharti AXA Life Insurance ,Insurance,Insurance
+208,HDFCLTD,Loan (EMI),Loan (EMI)
+209,HDFC Bank Personal Loan,Loan (EMI),Loan (EMI)
+210,SBI Personal Loan,Loan (EMI),Loan (EMI)
+211,PNB Personal Loan,Loan (EMI),Loan (EMI)
+212,Mahindra Finance Personal Loan,Loan (EMI),Loan (EMI)
+213, IDBI Home Loan,Loan (EMI),Loan (EMI)
+214,PNB Housing Finance,Loan (EMI),Loan (EMI)
+215,Rent,Rent,Rent
+216,EMI,Loan (EMI),Sports Brand
+217,HDFC CC PMT (HDFC Credit Card Payment),Credit Card,Credit Card
+218,HDFC Regalia CC PMT,Credit Card,Credit Card
+219,SBI Elite CC PMT,Credit Card,Credit Card
+220,Axis Privilege CC PMT,Credit Card,Credit Card
+221,Citi Prestige CC PMT,Credit Card,Credit Card
+222,Amex Platinum CC PMT,Credit Card,Credit Card
+223, ICICI CC PMT (ICICI Bank Credit Card Ca),Credit Card,Credit Card
+224,Transfer,Transfer,Transfer
+225,Credit Card,Credit Card,Credit Card
+226,AD LIC,Insurance,Insurance
+227,Motilal Oswal ,Investment,Investment
+228,BSE ISIP,Investment,Investment
+229,NPS Trust,Investment,Investment
+230,State Bank Card (SBICARD),Credit Card,Credit Card
+231,SAL FINTECH PRODUCTS and SOLUTIONS,Other,Other
+231,PMSBY,Insurance,Insurance
+232,PMJJY,Insurance,Insurance
+233,Principal Mutual Fund,Investment,Investment
+234,MTL OSWL,Investment,Investment
+235,Taza Thindi,Foods and Drinks,Snacks
+236,A2B,Foods and Drinks,Restaurant
+237,Shiv Sagar,Foods and Drinks,Restaurant
+238,Sri Sagar,Foods and Drinks,Restaurant
+239,Thalasary,Foods and Drinks,Restaurant
+240,Veena Store,Foods and Drinks,Snacks
+241,Vidyarthi Bhavan,Foods and Drinks,Snacks
+242,Udupi ,Foods and Drinks,Restaurant
+243,Raghavendra Bakery,Foods and Drinks,Snacks
+244,Suman Collection,Shopping,F Clothing Brand
+245,Amarjyothi Store,Shopping,F Clothing Brand
+246,Anugraha Textile,Shopping,U Clothing Brand
+247,Mushkan Garment,Shopping,U Clothing Brand
+248,Power Jeans ,Shopping,M Clothing Brand
+249,Ramraj Retail,Shopping,M Clothing Brand
+250,Ritesh Mens World,Shopping,M Clothing Brand
+251,Swadeshi,Shopping,U Clothing Brand
+252,Kumkum Fashion,Shopping,F Clothing Brand
+253,Suguna Hospital,Health,Hospital
+254,Den Cables,Bills,TV
+255,Sabhaiya Hospital,Health,Hospital
+256,Kirana Store,Groceries,Small Grocery Shop
+257,Saxena Fruit Shop,Groceries,Small Grocery Shop
+258,Billu Barber,Personal Care,Salon
+259,Max Clothing,Shopping,Clothing Center
+260,Raghu Medicals,Health,Pharmacy
+261,Sri Sai Medicals,Health,Pharmacy
+262,Sri Ganesh Medicals,Health,Pharmacy
+263,Catwalk,Shopping,F Footwear Brand
+264,Relaxo,Shopping,U Footwear Brand
+265,Ginger,Shopping,F Footwear Brand
+266,Inc 5,Shopping,F Footwear Brand
+267,Crocs,Shopping,U Footwear Brand
+268,Hush Puppy,Shopping,U Footwear Brand
+269,Zaras Salon ,Personal Care,Salon
+270,My Spiritz,Foods and Drinks,Liquor
+271,Tonique,Foods and Drinks,Liquor
+272,Home Center,Shopping,Furniture
+273,Sugar,Shopping,Cosmetics
+274,Mac,Shopping,Cosmetics
+275,Ori Flame,Shopping,Cosmetics
+276,Veromoda ,Shopping,F Clothing Brand
+277,And Women,Shopping,F Clothing Brand
+278,W Women,Shopping,F Clothing Brand
+279,Forever 21,Shopping,F Clothing Brand
+280,Revlon,Shopping,Cosmetics
+281,Titan Watches,Shopping,Watch Brand
+282,J Giga Fiber,Bills,Wifi
+283,Myra,Health,E-Pharmacy
+284,Fab India,Shopping,F Clothing Brand
+285,Aurelia,Shopping,F Clothing Brand
+286,Westside ,Shopping,F Clothing Brand
+287,Global Desi,Shopping,F Clothing Brand
+288,Calvin Klein,Shopping,U Clothing Brand
+289,Levis,Shopping,U Clothing Brand
+290,Madame,Shopping,F Clothing Brand
+291,Mango,Shopping,F Clothing Brand
+292,Red Tape,Shopping,M Footwear Brand
+293,Cafe Coffee Day,Foods and Drinks,Coffee Shop
+294,Barista,Foods and Drinks,Coffee Shop
+295,Clarks,Shopping,M Footwear Brand
