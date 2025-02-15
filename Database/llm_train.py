@@ -28,7 +28,7 @@ with open(CONFIG_PATH, "r") as config_file:
 GROQ_API_KEY = config.get("GROQ_API_KEY")
 
 
-file_path = r"C:\FreeFinance2\FreeFinance2\Database\customer_data.json"
+file_path = "Database/customer_data.json"
 
 with open(file_path, "r") as f:
     data = json.load(f)
@@ -44,11 +44,11 @@ df["type"] = df["type"].str.lower().str.strip()  # Normalize 'type' column
 # ==========================
 # LOAD OTHER FINANCIAL DATA
 # ==========================
-fav_brands_file = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\favBrands.json"
-reminder_file_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\reminderDetails.json"
-fd_file_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\fdDetails.json"
-rd_file_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\rdDetails.json"
-file_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\shreya_fidata.json"
+fav_brands_file = "Database/favBrands.json"
+reminder_file_path = "Database/reminderDetails.json"
+fd_file_path = "Database/fdDetails.json"
+rd_file_path = "Database/rdDetails.json"
+file_path = "Database/customer_data.json"
 
 with open(file_path, "r") as f:
     data = json.load(f)
@@ -106,10 +106,10 @@ reminder_df["next_date"] = pd.to_datetime(reminder_df["next_date"], format="%d-%
 # ==========================
 # LOAD TRAINED LOAN MODEL
 # ==========================
-model_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\loan_model\loan_model.pkl"
-scaler_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\loan_model\loan_scaler.pkl"
-encoder_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\loan_model\loan_encoder_classes.pkl"
-feature_path = r"D:\Prooject\FreeFinance-main (1)\FreeFinance-main\database\loan_model\loan_features.pkl"
+model_path = "Database/loan_model/loan_model/loan_model.pkl"
+scaler_path = "Database/loan_model/loan_model/loan_scaler.pkl"
+encoder_path = "Database/loan_model/loan_model/loan_encoder_classes.pkl"
+feature_path = "Database/loan_model/loan_model/loan_features.pkl"
 
 # Load the model, scaler, and encoder
 model = joblib.load(model_path)
@@ -305,10 +305,10 @@ llm_chain = LLMChain(llm=llama3, prompt=template)
 # ==========================
 # USER INTERACTION
 # ==========================
-user_question = input("Ask me anything about your finances: ")
-answer = analyze_transactions(user_question)
+# user_question = input("Ask me anything about your finances: ")
+# answer = analyze_transactions(user_question)
 
-if not answer:
-    answer = llm_chain.run(question=user_question)
+# if not answer:
+#     answer = llm_chain.run(question=user_question)
 
-print("Assistant:", answer)
+# print("Assistant:", answer)
