@@ -1,0 +1,68 @@
+Brand_name,Category,Min,Max
+Airtel (Bharti Air),Bills,21,300
+Jio,Bills,21,300
+Amul,Foods and Drinks,50,100
+Kwality Bazaar ,Groceries,50,300
+Apollo Pharmacy,Health,50,300
+SK Rolls,Foods and Drinks,50,100
+Bharat Petroleum,Fuel,100,200
+Indian Oil,Fuel,100,200
+Hindustan Petroleum,Fuel,100,200
+Shell,Fuel,100,200
+IRCTC,Travel,100,550
+BESCOM,Bills,250,800
+MESCOM,Bills,250,800
+Swathi Hospital,Health,300,10000
+UTH Fashion,Shopping,300,1000
+Mariya Mart,Groceries,50,300
+Cash Withdrawal (cashwdl),Cash Withdrawal,500,1000
+Sai Sarvana,Foods and Drinks,50,300
+Big Bazaar,Groceries,50,350
+TP Kotak Life Insurance,Insurance,1000,2000
+IndiaFirst Life Insurance,Insurance,1000,2000
+Max Life Insurance,Insurance,1000,2000
+TP ExideLife Insurance,Insurance,1000,2000
+Aditya Birla Sun Life Insurance,Insurance,1000,2000
+AEGON Life Insurance,Insurance,1000,2000
+Bajaj Allianz Life Insurance,Insurance,1000,2000
+Bharti AXA Life Insurance ,Insurance,1000,2000
+HDFCLTD,Loan (EMI),1000,3000
+HDFC Bank Personal Loan,Loan (EMI),1000,3000
+SBI Personal Loan,Loan (EMI),1000,3000
+PNB Personal Loan,Loan (EMI),1000,3000
+Mahindra Finance Personal Loan,Loan (EMI),1000,3000
+ IDBI Home Loan,Loan (EMI),1000,3000
+PNB Housing Finance,Loan (EMI),1000,3000
+Rent,Rent,4000,12000
+EMI,Loan (EMI),1000,3000
+Transfer,Transfer,500,1000
+AD LIC,Insurance,1000,2000
+PMSBY,Insurance,12,13
+PMJJY,Insurance,330,331
+Max Clothing,Shopping,300,1000
+Taza Thindi,Foods and Drinks,20,100
+Shiv Sagar,Foods and Drinks,40,120
+Sri Sagar,Foods and Drinks,30,100
+Thalasary,Foods and Drinks,40,150
+Veena Store,Foods and Drinks,20,80
+Vidyarthi Bhavan,Foods and Drinks,20,80
+Udupi ,Foods and Drinks,30,120
+Raghavendra Bakery,Foods and Drinks,10,100
+Suman Collection,Shopping,200,1000
+Amarjyothi Store,Shopping,200,1000
+Anugraha Textile,Shopping,200,1000
+Mushkan Garment,Shopping,200,1000
+Power Jeans ,Shopping,200,1000
+Ramraj Retail,Shopping,200,1000
+Ritesh Mens World,Shopping,200,1000
+Swadeshi,Shopping,200,1000
+Kumkum Fashion,Shopping,200,1000
+Suguna Hospital,Health,200,1000
+Den Cables,Bills,200,400
+Sabhaiya Hospital,Health,300,1000
+Kirana Store,Groceries,30,300
+Saxena Fruit Shop,Groceries,30,200
+Billu Barber,Personal Care,20,70
+Raghu Medicals,Health,50,300
+Sri Sai Medicals,Health,50,300
+Sri Ganesh Medicals,Health,50,300

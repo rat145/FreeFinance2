@@ -1,0 +1,285 @@
+Brand_name,Category,Min,Max
+Airtel (Bharti Air),Bills,21,400
+Jio,Bills,21,400
+Amul,Foods and Drinks,50,300
+Spencers,Groceries,100,2000
+Reliance Fresh,Groceries,100,1500
+Kwality Bazaar ,Groceries,100,1000
+Shopper Stop,Shopping,800,5000
+Reliance Digital,Shopping,1000,80000
+Louis Philippe,Shopping,800,2000
+Arrow,Shopping,1000,3000
+Van Heusen,Shopping,1000,3000
+Allen Solly,Shopping,800,2500
+Casio,Shopping,4000,9000
+Peter England,Shopping,1000,2000
+Dunkin Donuts,Foods and Drinks,150,500
+KFC,Foods and Drinks,150,600
+Mc Donalds,Foods and Drinks,150,600
+Taco Bell,Foods and Drinks,150,600
+Nykaa,Shopping,800,2000
+Zara,Shopping,900,3000
+Starbucks,Foods and Drinks,300,700
+Burger King,Foods and Drinks,100,500
+Game The Shop,Shopping,500,2000
+CEX,Shopping,1000,30000
+Jockey,Shopping,500,2000
+Hamleys,Shopping,500,3000
+American Tourister,Shopping,1000,5000
+Manyavar,Shopping,3000,9000
+Raymond,Shopping,1000,7000
+Bose,Shopping,10000,20000
+Land Mark,Shopping,100,10000
+H&M,Shopping,800,3000
+Sony,Shopping,2000,9000
+Samsonite,Shopping,1000,5000
+Skechers,Shopping,1500,6000
+Nike,Shopping,1500,6000
+Pepe Jeans,Shopping,1500,6000
+Jack and Jones,Shopping,700,3000
+Lens Kart,Shopping,1000,8000
+Lenovo,Shopping,20000,50000
+Croma,Shopping,500,50000
+Lacoste,Shopping,1000,3000
+iPlanet,Shopping,3000,60000
+Gap,Shopping,1000,5000
+Fastrack,Shopping,1000,4000
+Samsung,Shopping,2000,60000
+Miniso,Shopping,100,3000
+Mi Store,Shopping,1000,20000
+Chumbak,Shopping,300,3000
+Ramaiah Hospital,Health,500,3000
+PVR,Entertainment,250,600
+Inox,Entertainment,250,600
+Cinepolis,Entertainment,250,600
+Apollo Pharmacy,Health,100,1000
+Bata,Shopping,600,2500
+Being Human,Shopping,500,3000
+Fitbit,Shopping,9000,15000
+Amazon (AMZN),Shopping,150,30000
+PatymMall,Shopping,150,30000
+Flipkart,Shopping,150,30000
+Myntra,Shopping,150,30000
+Zoomcar,Travel,800,6000
+HP World,Shopping,20000,50000
+Vogo,Travel,50,300
+Bounce,Travel,20,300
+Gilly's,Foods and Drinks,400,3000
+Plated,Foods and Drinks,400,2000
+Plan B,Foods and Drinks,400,3000
+Smally's,Foods and Drinks,300,1200
+Smoke House,Foods and Drinks,500,3000
+Chin lung,Foods and Drinks,400,2500
+Sherlock's Pub,Foods and Drinks,500,3000
+Sarjapur Social,Foods and Drinks,500,3000
+No Limmits,Foods and Drinks,1000,3000
+Nandi Hangout,Foods and Drinks,500,2500
+Zomato,Foods and Drinks,100,1500
+Swiggy,Foods and Drinks,100,1500
+Dominos,Foods and Drinks,500,2000
+Tawa Tandoor,Foods and Drinks,500,1500
+Burp,Foods and Drinks,500,1500
+Vinny's,Foods and Drinks,500,1500
+Chapter One,Foods and Drinks,500,3000
+Cuppa ,Foods and Drinks,500,1500
+Polar Bear,Foods and Drinks,300,1200
+Beijing Bites,Foods and Drinks,300,1200
+Mr Goofy's,Foods and Drinks,300,1200
+Stoned Monkey,Foods and Drinks,300,1200
+Leon Grill,Foods and Drinks,300,1200
+Adidas,Shopping,2000,6000
+Reebok,Shopping,2000,6000
+Fortis Hospital,Health,500,10000
+Narayana Hospital,Health,500,8000
+Sky Bags,Shopping,800,6000
+Bangalore Central,Shopping,500,5000
+Tanishq,Shopping,2000,50000
+Poorvika Mobile,Shopping,4000,10000
+Aabushan,Shopping,3000,70000
+Ray Ban,Shopping,3000,10000
+Bluo,Entertainment,300,1200
+Smaash,Entertainment,300,1200
+Titan Eye Plus,Shopping,1000,8000
+Tissot,Shopping,5000,10000
+USPA,Shopping,1000,3000
+Vans,Shopping,1800,4000
+VIP,Shopping,800,6000
+Make My Trip,Travel,500,15000
+Go Ibibo,Travel,500,15000
+Clear Trip,Travel,500,15000
+5 Computers,Shopping,20000,60000
+Canon,Shopping,20000,50000
+Spar Hypermarket,Groceries,50,2000
+Reliance Jewels,Shopping,1000,30000
+SK Rolls,Foods and Drinks,50,150
+Crossword ,Shopping,100,2000
+O2 Spa,Personal Care,1000,2000
+Super Dry,Shopping,1000,3000
+Only,Shopping,500,2500
+Biba,Shopping,700,2500
+Paypal,Transfer,10,3000
+Bharat Petroleum,Fuel,100,2000
+Indian Oil,Fuel,100,2000
+Hindustan Petroleum,Fuel,100,2000
+Shell,Fuel,100,2000
+IRCTC,Travel,500,1500
+Uber,Travel,200,600
+Ola ,Travel,200,600
+Meru Cabs,Travel,200,900
+Skull Candy,Shopping,800,3000
+Kaya Skin Clinic,Personal Care,200,1800
+Hairspeak,Personal Care,200,1800
+Invogue Salon,Personal Care,200,1800
+BBlunt,Personal Care,200,1800
+Javed Habib,Personal Care,200,1800
+BESCOM,Bills,500,2000
+Dish TV India (Dish Infra),Bills,300,800
+Ion Broadband,Bills,500,1500
+Tatasky,Bills,300,800
+MESCOM,Bills,500,2000
+Netflix,Entertainment,200,1000
+Hotstar,Entertainment,100,100
+Zee5,Entertainment,100,100
+AltBalaji,Entertainment,100,100
+1mg,Health,100,600
+Dunzo,Courier,100,400
+Eat Fit,Foods and Drinks,100,500
+Fresh Menu,Foods and Drinks,100,500
+Gold's Gym,Personal Care,1500,3000
+CultFit,Personal Care,1500,3000
+Booking,Travel,500,15000
+Rapido,Travel,50,200
+Revv,Travel,800,2000
+Myles Car,Travel,800,2000
+Nearbuy,Foods and Drinks,500,2000
+HeathXP,Health,500,1500
+Big Basket,Groceries,100,1500
+Grofers,Groceries,100,1500
+Chai Point,Foods and Drinks,200,600
+Drops Liquor,Foods and Drinks,200,1500
+Dell,Shopping,20000,50000
+Acer,Shopping,20000,50000
+Citizen Watches,Shopping,3000,9000
+Decathlon,Shopping,400,10000
+Ikea,Shopping,1000,50000
+Royal Oak Furniture,Shopping,1000,50000
+William Penn,Shopping,1000,3000
+Bluedart,Courier,500,1200
+FedEx,Courier,500,1200
+HomeTown,Shopping,500,20000
+Bombay Dyeing,Shopping,500,1500
+Pantaloons,Shopping,500,2000
+Ease My Trip (EasyTrip),Travel,500,1500
+Swathi Hospital,Health,300,3000
+Mariya Mart,Groceries,100,1000
+Rolls on Wheel,Foods and Drinks,50,150
+Levitate Brewery Bangalore,Foods and Drinks,500,3000
+Cash Withdrawal (cashwdl),Cash Withdrawal,500,5000
+Sai Sarvana,Foods and Drinks,30,100
+Big Bazaar,Groceries,100,1500
+Book My Show,Entertainment,250,1000
+Dentist Clinic,Health,500,3000
+Skin Clinic,Health,500,2000
+Ear Nose Throat (ENT) Clinic,Health,500,3000
+Eye Clinic,Health,500,1500
+Gynaecologist Clinic,Health,500,1000
+Physiotheraphy Clinic,Health,500,1000
+Psychiatrist Clinic,Health,500,1000
+Sexologist,Health,500,1000
+Simple Pay,Bills,200,5000
+Lazy Pay,Bills,200,5000
+TP Kotak Life Insurance,Insurance,2000,4000
+IndiaFirst Life Insurance,Insurance,2000,4000
+Max Life Insurance,Insurance,2000,4000
+TP ExideLife Insurance,Insurance,2000,4000
+Aditya Birla Sun Life Insurance,Insurance,2000,4000
+AEGON Life Insurance,Insurance,2000,4000
+Bajaj Allianz Life Insurance,Insurance,2000,4000
+Bharti AXA Life Insurance ,Insurance,2000,4000
+HDFCLTD,Loan (EMI),3000,20000
+HDFC Bank Personal Loan,Loan (EMI),3000,20000
+SBI Personal Loan,Loan (EMI),3000,20000
+PNB Personal Loan,Loan (EMI),3000,20000
+Mahindra Finance Personal Loan,Loan (EMI),3000,20000
+ IDBI Home Loan,Loan (EMI),3000,20000
+PNB Housing Finance,Loan (EMI),3000,20000
+Rent,Rent,7000,15000
+EMI,Loan (EMI),3000,20000
+HDFC CC PMT (HDFC Credit Card Payment),Credit Card,15000,50000
+HDFC Regalia CC PMT,Credit Card,15000,50000
+SBI Elite CC PMT,Credit Card,15000,50000
+Axis Privilege CC PMT,Credit Card,15000,50000
+Citi Prestige CC PMT,Credit Card,15000,50000
+Amex Platinum CC PMT,Credit Card,15000,50000
+ ICICI CC PMT (ICICI Bank Credit Card Ca),Credit Card,15000,50000
+Transfer,Transfer,100,4000
+Credit Card,Credit Card,15000,50000
+AD LIC,Insurance,3000,5000
+Motilal Oswal ,Investment,5000,15000
+BSE ISIP,Investment,3000,15000
+NPS Trust,Investment,3000,15000
+State Bank Card (SBICARD),Credit Card,15000,50000
+PMSBY,Insurance,12,12
+PMJJY,Insurance,330,330
+Principal Mutual Fund,Investment,3000,15000
+MTL OSWL,Investment,5000,15000
+Taza Thindi,Foods and Drinks,30,150
+A2B,Foods and Drinks,100,500
+Shiv Sagar,Foods and Drinks,100,500
+Sri Sagar,Foods and Drinks,40,500
+Thalasary,Foods and Drinks,100,600
+Veena Store,Foods and Drinks,50,300
+Vidyarthi Bhavan,Foods and Drinks,50,300
+Udupi ,Foods and Drinks,100,400
+Raghavendra Bakery,Foods and Drinks,50,400
+Suman Collection,Shopping,400,1000
+Amarjyothi Store,Shopping,400,1000
+Anugraha Textile,Shopping,400,1000
+Mushkan Garment,Shopping,400,1000
+Power Jeans ,Shopping,400,1000
+Ramraj Retail,Shopping,400,1000
+Ritesh Mens World,Shopping,400,1000
+Swadeshi,Shopping,400,1000
+Kumkum Fashion,Shopping,400,1000
+Suguna Hospital,Health,300,5000
+Den Cables,Bills,250,500
+Sabhaiya Hospital,Health,300,5000
+Kirana Store,Groceries,100,500
+Saxena Fruit Shop,Groceries,100,600
+Max Clothing,Shopping,400,2000
+Raghu Medicals,Health,100,600
+Sri Sai Medicals,Health,100,600
+Sri Ganesh Medicals,Health,100,600
+Catwalk,Shopping,800,2000
+Relaxo,Shopping,800,2000
+Ginger,Shopping,800,2000
+Inc 5,Shopping,800,2000
+Crocs,Shopping,800,3000
+Hush Puppy,Shopping,1500,4000
+Zaras Salon ,Personal Care,200,800
+My Spiritz,Foods and Drinks,300,3000
+Tonique,Foods and Drinks,1000,5000
+Home Center,Shopping,1000,100000
+Sugar,Shopping,500,3000
+Mac,Shopping,500,3000
+Ori Flame,Shopping,300,3000
+Veromoda ,Shopping,600,4000
+And Women,Shopping,600,4000
+W Women,Shopping,600,4000
+Forever 21,Shopping,600,4000
+Revlon,Shopping,300,3000
+Titan Watches,Shopping,2000,6000
+Jio Giga Fiber,Bills,800,1500
+Myra,Health,100,800
+Fab India,Shopping,800,4000
+Aurelia,Shopping,800,4500
+Westside ,Shopping,800,5000
+Global Desi,Shopping,800,4000
+Calvin Klein,Shopping,1100,5500
+Levis,Shopping,600,4500
+Madame,Shopping,500,4500
+Mango,Shopping,800,4000
+Red Tape,Shopping,1500,4000
+Cafe Coffee Day,Foods and Drinks,200,2000
+Barista,Foods and Drinks,200,2000
+Clarks,Shopping,1200,3500
