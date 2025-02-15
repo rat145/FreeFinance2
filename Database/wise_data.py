@@ -4,7 +4,7 @@ import csv
 import json
 import datetime as dt
 from datetime import datetime
-
+pd.options.display.max_columns = 20
 
 def json2csv(json_name, csv_name, key):
     with open(json_name) as json_file:
