@@ -84,6 +84,7 @@ def brands():
 
     return render_template("dashboard.html", activeTab="brands", loyalty_brands_data = lb_data, recommended_brands_data = rb_data)
 
+
 # Route to serve files from the "database" folder
 @app.route("/database/<filename>")
 def database(filename):
@@ -92,6 +93,42 @@ def database(filename):
 @app.route("/dashboard/finpilot")
 def finpilot():
     return render_template("finpilot.html")
+
+@app.route("/dashboard/finpilot/ask", methods=['POST'])
+def ask():
+    try:
+        data = request.get_json()
+        
+        if not data or 'question' not in data:
+            return jsonify({'error': 'No question provided'}), 400
+        
+        user_question = data['question']
+        
+        # Get the answer
+        answer = analyze_transactions(user_question)
+        
+        # Debug print to see what's being returned
+        print("Answer from analyze_transactions:", answer)
+        
+        if not answer:
+            answer = llm_chain.run(question=user_question)
+            print("Answer from llm_chain:", answer)
+        
+        # If the answer is already a list, return it directly
+        if isinstance(answer, list):
+            return jsonify({'answer': answer})
+            
+        # If it's a string but contains multiple questions (separated by newlines)
+        elif isinstance(answer, str) and '\n' in answer:
+            questions = [q.strip() for q in answer.split('\n') if q.strip()]
+            return jsonify({'answer': questions})
+            
+        # If it's a single response
+        return jsonify({'answer': answer})
+        
+    except Exception as e:
+        print(f"Error in /ask endpoint: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route("/dashboard/profile")
 def profile():

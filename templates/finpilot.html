@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Assistant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .chat-container {
+        width: 400px;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #chat-box {
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: #fafafa;
+      }
+
+      #user-input {
+        width: calc(100% - 90px);
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        width: 80px;
+        padding: 10px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #4cae4c;
+      }
+
+      .error {
+        color: red;
+        font-style: italic;
+      }
+
+      .message {
+        margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .user-message {
+        background-color: #e3f2fd;
+        margin-left: 20px;
+      }
+
+      .assistant-message {
+        background-color: #f5f5f5;
+        margin-right: 20px;
+      }
+
+      .loading {
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .loading:after {
+        content: "...";
+        animation: dots 1.5s steps(5, end) infinite;
+      }
+
+      @keyframes dots {
+        0%,
+        20% {
+          content: ".";
+        }
+        40% {
+          content: "..";
+        }
+        60%,
+        100% {
+          content: "...";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <h1>Financial Assistant Chatbot</h1>
+      <div id="chat-box"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          name="question"
+          placeholder="Ask me anything about your finances..."
+          required
+        />
+        <button type="submit" id="submit-button">Send</button>
+      </form>
+    </div>
+    <script>
+      let conversationHistory = [];
+      let isWaitingForResponse = false;
+
+      function addMessage(content, isUser = false) {
+        const chatBox = document.getElementById("chat-box");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `message ${
+          isUser ? "user-message" : "assistant-message"
+        }`;
+
+        // If content is an array, join it with line breaks
+        if (Array.isArray(content)) {
+          messageDiv.innerHTML =
+            `<strong>${isUser ? "You" : "Assistant"}:</strong><br>` +
+            content.map((item) => `• ${item}`).join("<br>");
+        } else {
+          messageDiv.innerHTML = `<strong>${
+            isUser ? "You" : "Assistant"
+          }:</strong> ${content}`;
+        }
+
+        chatBox.appendChild(messageDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      function showLoading() {
+        const chatBox = document.getElementById("chat-box");
+        const loadingDiv = document.createElement("div");
+        loadingDiv.className = "message assistant-message loading";
+        loadingDiv.innerHTML = "<strong>Assistant:</strong> Thinking";
+        loadingDiv.id = "loading-message";
+        chatBox.appendChild(loadingDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      function removeLoading() {
+        const loadingMessage = document.getElementById("loading-message");
+        if (loadingMessage) {
+          loadingMessage.remove();
+        }
+      }
+
+      document.getElementById("chat-form").onsubmit = async function (e) {
+        e.preventDefault();
+
+        if (isWaitingForResponse) {
+          return;
+        }
+
+        const userInput = document.getElementById("user-input").value;
+        if (!userInput.trim()) return;
+
+        // Add user message to chat
+        addMessage(userInput, true);
+
+        // Clear input
+        document.getElementById("user-input").value = "";
+
+        isWaitingForResponse = true;
+        showLoading();
+
+        try {
+          const response = await fetch("/dashboard/finpilot/ask", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              question: userInput,
+              history: conversationHistory,
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          const data = await response.json();
+
+          // Debug log to see what's being received
+          console.log("Received data:", data);
+
+          removeLoading();
+
+          if (data.error) {
+            throw new Error(data.error);
+          }
+
+          addMessage(data.answer);
+
+          // Store in conversation history
+          if (Array.isArray(data.answer)) {
+            data.answer.forEach((question) => {
+              conversationHistory.push({
+                role: "assistant",
+                content: question,
+              });
+            });
+          } else {
+            conversationHistory.push({
+              role: "assistant",
+              content: data.answer,
+            });
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          removeLoading();
+          addMessage("Failed to get response. Please try again.", false);
+        } finally {
+          isWaitingForResponse = false;
+        }
+      };
+    </script>
+  </body>
+</html>
